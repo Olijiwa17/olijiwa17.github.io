@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightseagreen;
+      }
+      #card {
+        width: 744px;
+        height: 528px;
+        background-color: white;
+        position: relative;
+      }
+      #intro {
+        width: 238px;
+        height: 284px;
+        background-color: darkslategray;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        padding-left: 24px;
+      }
+
+      #center {
+        width: 328px;
+        height: 520px;
+        /* background-color: lightgrey; */
+        position: absolute;
+        left: 238px;
+        color: rgb(114, 109, 109);
+        padding-left: 24px;
+      }
+
+      h2 {
+        color: lightseagreen;
+      }
+      #right {
+        width: 186px;
+        height: 528px;
+        position: absolute;
+        right: 0;
+        padding-right: 24px;
+      }
+      .skill {
+        width: 138px;
+        height: 32px;
+        /* background-color: lightpink; */
+        position: relative;
+        color: gray;
+       margin-top: 12px; 
+        
+      }
+      .grey-bar {
+        width: 138px;
+        height: 12px;
+        background-color: rgb(134, 125, 125);
+        position: absolute;
+        bottom: 0px;
+        border-radius: 6px;
+      }
+      .green-bar{
+        width: 100px;
+        height: 12px;
+        background-color: lightseagreen;
+        position: absolute;
+        bottom: 0px;
+        border-radius: 6px;
+      }
+      .green-bar-2{
+        width:24px;
+        left:24px;
+        height: 12px;
+        background-color: lightseagreen;
+        position: absolute;
+        bottom: 0px;
+        border-radius: 6px;
+      }
+      .right-text{
+        position: absolute;
+right:0px;
+top: 0px;
+
+      }
+      img{
+        position: absolute;
+        top:0px;
+        left:0px;
+      }
+    </style>
+    <script
+      src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+    $(function(){
+      $("#img-2").hide();
+      $("#img-1").click(function(){
+        $("#img-1").fadeout();
+        $("#img-2").fadeIn();
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <img src="oli_pho.jpg" id="img-1" width="238" height="244"/>
+      <img src="oli_photo2.jpg" id="img-2" width="238" height="244"/>
+      <div id="intro">
+        <h1>徐士雯 Olivia</h1>
+        <p>Project Manager</p>
+        <p>1985.11.17</p>
+        <p>世新大學 廣電系電影組</p>
+        <p>shihwen17@gmail.com</p>
+      </div>
+      <div id="center">
+        <h2>自我介紹</h2>
+        <p></p>
+        <h2>工作經歷</h2>
+        <ul>
+          <li>無厘頭動畫</li>
+          <li>恩克斯網路</li>
+        </ul>
+        <h2>主要成就</h2>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div id="right">
+        <h2>個性</h2>
+        <div class="skill">
+            內向 
+            <div class="right-text">外向</div>
+            <div class="grey-bar"></div>
+            <div class="green-bar-2"></div>
+            
+          </div>
+          <div class="skill">
+              理性 
+              <div class="right-text">感性</div>
+              <div class="grey-bar"></div>
+              <div class="green-bar-2" style="left:50%;"></div>
+              
+            </div>
+      <h2>技能</h2>
+      <div class="skill">
+        HTML
+        <div class="grey-bar"></div>
+        <div class="green-bar"></div>
+        
+      </div>
+      <div class="skill">
+          CSS
+          <div class="grey-bar"></div>
+          <div class="green-bar"></div>
+          
+          
+        </div>
+    </div>
+  </body>
+</html>
